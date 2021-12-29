@@ -1,4 +1,4 @@
-package com.eu.at_it.helpers;
+package com.eu.at_it.helper;
 
 public class Pair<L, R> {
     private final L left;

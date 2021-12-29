@@ -1,11 +1,14 @@
-package com.eu.at_it.presentation.annotations;
+package com.eu.at_it.annotation.data;
+
+import com.eu.at_it.service.data.DataService;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Location {
+@Target(ElementType.TYPE)
+public @interface ServedBy {
+    Class<? extends DataService> dataService();
 }

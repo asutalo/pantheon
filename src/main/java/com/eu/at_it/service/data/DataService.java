@@ -1,4 +1,4 @@
-package com.eu.at_it.service;
+package com.eu.at_it.service.data;
 
 import java.util.List;
 import java.util.Map;
