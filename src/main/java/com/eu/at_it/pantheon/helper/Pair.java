@@ -1,4 +1,4 @@
-package com.eu.at_it.helper;
+package com.eu.at_it.pantheon.helper;
 
 public class Pair<L, R> {
     private final L left;

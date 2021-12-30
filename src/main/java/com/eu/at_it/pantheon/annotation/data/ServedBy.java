@@ -1,6 +1,6 @@
-package com.eu.at_it.annotation.data;
+package com.eu.at_it.pantheon.annotation.data;
 
-import com.eu.at_it.service.data.DataService;
+import com.eu.at_it.pantheon.service.data.DataService;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

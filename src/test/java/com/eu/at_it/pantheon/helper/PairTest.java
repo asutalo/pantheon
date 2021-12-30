@@ -1,4 +1,4 @@
-package com.eu.at_it.helper;
+package com.eu.at_it.pantheon.helper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
