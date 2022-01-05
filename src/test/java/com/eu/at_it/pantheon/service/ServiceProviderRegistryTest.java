@@ -1,6 +1,6 @@
 package com.eu.at_it.pantheon.service;
 
-import com.eu.at_it.pantheon.Exceptions.PantheonProviderException;
+import com.eu.at_it.pantheon.exceptions.PantheonProviderException;
 import com.eu.at_it.pantheon.service.data.DataServiceProvider;
 import com.google.inject.TypeLiteral;
 import org.junit.jupiter.api.Assertions;

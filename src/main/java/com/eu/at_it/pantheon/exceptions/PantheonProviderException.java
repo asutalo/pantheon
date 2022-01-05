@@ -1,4 +1,4 @@
-package com.eu.at_it.pantheon.Exceptions;
+package com.eu.at_it.pantheon.exceptions;
 
 public class PantheonProviderException extends RuntimeException {
     public PantheonProviderException(String message) {
