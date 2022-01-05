@@ -1,9 +1,11 @@
 package com.eu.at_it.pantheon.service.data;
 
+import com.eu.at_it.pantheon.service.Service;
+
 import java.util.List;
 import java.util.Map;
 
-public interface DataService<T, Q> {
+public interface DataService<T, Q> extends Service {
     T update(T toUpdate) throws Exception;
 
     T save(T toSave) throws Exception;
