@@ -14,6 +14,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Map;
 
+import static org.mockito.Mockito.mock;
+
 @ExtendWith(MockitoExtension.class)
 class ServiceProviderRegistryTest {
     private static final TypeLiteral<Object> OBJECT_TYPE_LITERAL = TypeLiteral.get(Object.class);
@@ -48,6 +50,17 @@ class ServiceProviderRegistryTest {
         int modifiers = instanceMethod.getModifiers();
 
         Assertions.assertTrue(Modifier.isSynchronized(modifiers));
+    }
+
+    @Test
+    void setInstance() {
+        ServiceProviderRegistry mockServiceProviderRegistry = mock(ServiceProviderRegistry.class);
+
+        ServiceProviderRegistry.setInstance(mockServiceProviderRegistry);
+
+        Assertions.assertNotEquals(serviceProviderRegistry, ServiceProviderRegistry.INSTANCE());
+
+        ServiceProviderRegistry.clearInstance();
     }
 
     @Test

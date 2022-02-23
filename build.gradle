@@ -23,10 +23,10 @@ project.ext.setProperty("release.disableChecks", "true")
 project.ext.setProperty("release.pushTagsOnly", "true")
 
 dependencies {
-    api 'com.google.inject:guice:5.0.1'
+    api 'com.google.inject:guice:5.1.0'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
-    testImplementation 'org.mockito:mockito-core:4.2.0'
-    testImplementation 'org.mockito:mockito-junit-jupiter:4.2.0'
+    testImplementation 'org.mockito:mockito-core:4.3.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.3.1'
 }
 
 test {
