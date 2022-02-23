@@ -40,16 +40,6 @@ public class ServiceProviderRegistry {
         }
     }
 
-    //for injecting mocks in tests to simplify instantiation when interacting with ServiceProviderRegistry and avoid reflection
-    public static void setInstance(ServiceProviderRegistry instance) {
-        INSTANCE = instance;
-    }
-
-    //for injecting mocks in tests to simplify instantiation when interacting with ServiceProviderRegistry and avoid reflection
-    public static void clearInstance() {
-        INSTANCE = null;
-    }
-
     public void register(ServiceProvider serviceProvider) {
         TypeLiteral<? extends Service> providerForType = serviceProvider.providerFor();
 
@@ -64,11 +54,23 @@ public class ServiceProviderRegistry {
         return serviceProviderCache;
     }
 
-    void clearServiceProviderCache() {
+    //for injecting mocks in tests to simplify instantiation when interacting with ServiceProviderRegistry and avoid reflection
+    public static void setInstance(ServiceProviderRegistry instance) {
+        INSTANCE = instance;
+    }
+
+    //for injecting mocks in tests to simplify instantiation when interacting with ServiceProviderRegistry and avoid reflection
+    public static void clearInstance() {
+        INSTANCE = null;
+    }
+
+    //for injecting mocks in tests to simplify instantiation when interacting with ServiceProviderRegistry and avoid reflection
+    public void clearServiceProviderCache() {
         serviceProviderCache.clear();
     }
 
-    void clearServiceCache() {
+    //for injecting mocks in tests to simplify instantiation when interacting with ServiceProviderRegistry and avoid reflection
+    public void clearServiceCache() {
         serviceCache.clear();
     }
 }
