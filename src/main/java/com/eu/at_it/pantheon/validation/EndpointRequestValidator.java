@@ -13,7 +13,7 @@ public class EndpointRequestValidator implements InvocationHandler {
     private final PantheonEndpoint endpoint;
     private final Map<String, EndpointValidator> methodsAndValidators;
 
-    EndpointRequestValidator(PantheonEndpoint endpoint, Map<String, EndpointValidator> methodsAndValidators) {
+    public EndpointRequestValidator(PantheonEndpoint endpoint, Map<String, EndpointValidator> methodsAndValidators) {
         this.endpoint = endpoint;
         this.methodsAndValidators = methodsAndValidators;
     }
