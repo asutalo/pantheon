@@ -1,19 +1,32 @@
 package com.eu.at_it.pantheon.server.endpoints;
 
+import com.eu.at_it.pantheon.server.exceptions.NotImplementedException;
 import com.sun.net.httpserver.Headers;
 
 import java.util.Map;
 
 public interface PantheonEndpoint {
-    Response head(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders);
+    default Response head(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders) {
+        throw new NotImplementedException();
+    }
 
-    Response get(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders);
+    default Response get(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders) {
+        throw new NotImplementedException();
+    }
 
-    Response put(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders);
+    default Response put(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders) {
+        throw new NotImplementedException();
+    }
 
-    Response post(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders);
+    default Response post(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders) {
+        throw new NotImplementedException();
+    }
 
-    Response patch(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders);
+    default Response patch(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders) {
+        throw new NotImplementedException();
+    }
 
-    Response delete(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders);
+    default Response delete(Map<String, Object> uriParams, Map<String, Object> requestBody, Headers requestHeaders) {
+        throw new NotImplementedException();
+    }
 }
