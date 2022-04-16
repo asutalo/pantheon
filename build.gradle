@@ -10,8 +10,6 @@ repositories {
 
 group 'com.eu.atit'
 
-apply plugin: 'java'
-
 sourceCompatibility = '1.15'
 targetCompatibility = '1.15'
 
