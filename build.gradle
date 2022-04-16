@@ -5,13 +5,13 @@ plugins {
 
 repositories {
     mavenCentral()
-    maven { url "https://jitpack.io" }
+    maven { url 'https://jitpack.io' }
 }
 
 group 'com.eu.atit'
 
-apply plugin: "java"
-apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 sourceCompatibility = '1.15'
 targetCompatibility = '1.15'
