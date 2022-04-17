@@ -9,8 +9,6 @@ repositories {
 
 group 'com.eu.atit'
 
-apply plugin: 'maven-publish'
-
 sourceCompatibility = '1.15'
 targetCompatibility = '1.15'
 
