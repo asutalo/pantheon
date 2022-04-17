@@ -18,4 +18,16 @@ class PairTest {
     void right() {
         Assertions.assertEquals(SOME_INT, pair.right());
     }
+
+    @Test
+    void equals() {
+        Pair<String, Integer> otherPair = new Pair<>(SOME_STRING, SOME_INT);
+
+        Assertions.assertEquals(pair, otherPair);
+    }
+
+    @Test
+    void hashcode() {
+        Assertions.assertEquals(pair.hashCode(), pair.hashCode());
+    }
 }
